@@ -5,6 +5,8 @@ import Nav from "./components/Nav";
 import Testimoni from "./components/Testimoni";
 import Footer from "./components/Footer";
 import Baner from "./components/Baner";
+import Hobi from "./components/Hobi";
+import Galeri from "./components/Galeri";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Baner />
         <Home />
         <About />
+        <Hobi />
+        <Galeri />
         <Testimoni />
         <Footer />
       </div>
