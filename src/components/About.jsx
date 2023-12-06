@@ -6,7 +6,7 @@ import Button from './Button';
 
 function About() {
     return (
-        <section id="About" className="section container mx-auto">
+        <section id="About" className="h-screen container mx-auto">
             <div className='flex justify-between items-center'>
                 <div className='w-1/2'>
                     <img

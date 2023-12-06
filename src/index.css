@@ -74,7 +74,7 @@
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
   }
   .text-grad {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-semibold font-primary;
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#FF56F6] to-[#42A6E3] font-semibold font-primary;
   }
   .section {
     @apply min-h-screen flex py-8 lg:py-24;

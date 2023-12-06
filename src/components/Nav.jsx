@@ -34,7 +34,7 @@ function Nav() {
                 </Link>
 
                 <Link
-                    to='Testimoni'
+                    to='Hobi'
                     activeClass='active'
                     smooth={true}
                     spy={true}
@@ -45,7 +45,7 @@ function Nav() {
                 </Link>
 
                 <Link
-                    to=''
+                    to='Galeri'
                     activeClass='active'
                     smooth={true}
                     spy={true}

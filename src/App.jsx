@@ -2,7 +2,7 @@
 import About from "./components/About";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
-import Testimoni from "./components/Testimoni";
+import Slide from "./components/Slide";
 import Footer from "./components/Footer";
 import Baner from "./components/Baner";
 import Hobi from "./components/Hobi";
@@ -18,7 +18,7 @@ function App() {
         <About />
         <Hobi />
         <Galeri />
-        <Testimoni />
+        <Slide />
         <Footer />
       </div>
     </div>
