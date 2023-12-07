@@ -1,31 +1,77 @@
 
+
+
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion'
+
+
+// Image
 import AboutImg from '../assets/Andri.jpeg'
 // Component
 import Button from './Button';
+import { fadeIn } from '../variants'
 
 
 function About() {
+
+    const [ref, inView] = useInView({
+    threshold: 0.5,
+  });
+
     return (
-        <section id="About" className="h-screen container mx-auto">
+        <section id="About" ref={ref} className="h-screen container mx-auto">
             <div className='flex justify-between items-center'>
                 <div className='w-1/2'>
-                    <img
-                        src={AboutImg}
+                    <motion.img
+                        variants={fadeIn('right', 0.4)}
+                        initial='hidden'
+                        whileInView={'show'}
+                        viewport={{ once:false, amount: 0.7 }}
+                        src={AboutImg}              //  Image
                         className='w-4/5 h-4/5'
                     />
                 </div>
 
-                <div className='w-1/2'>
-                    <h1 className='h2 text-grad'>About Me</h1>
+                <motion.div
+                    variants={fadeIn('left', 0.4)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{ once:false, amount: 0.7 }}
+                    className='w-1/2'
+                >
+                    <h1 className='h2 mb-10 text-grad'>About Me</h1>
                     <h3 className='h3 mb-4'>
-                        Lorem ipsum dolor, sit amet consectetur <span className='text-grad'> architecto vitae, illo minima totam dolor dicta molestiae? Culpa laborum</span> numquam dicta rem omnis perferendis?
+                        Lorem ipsum dolor, sit amet consectetur <span className='text-gradient'> architecto vitae, illo minima totam dolor dicta molestiae? Culpa laborum</span> numquam dicta rem omnis perferendis?
                     </h3>
                     <p className='mb-5'>
-                        Lorem ipsum dolor sit amet  <span className='text-grad'> adipisicing elit. Dolores harum fuga facilis </span> optio libero doloribus rerum magni quae molestias voluptatesdolor commodi explicabo repellat rem reiciendis, deleniti cum soluta minima.
+                        Lorem ipsum dolor sit amet  <span className='text-gradient'> adipisicing elit. Dolores harum fuga facilis </span> optio libero doloribus rerum magni quae molestias voluptatesdolor commodi explicabo repellat rem reiciendis,<span className='text-gradient'> deleniti cum soluta minima.</span>
                     </p>
+
+                    <div className='flex gap-8'>
+                        <span className='text-center'>
+                            <h1 className='text-2xl'>
+                                {inView ? <CountUp start={0} end={19} duration={8}/> : null}
+                            </h1>
+                            <h1>Years Old</h1>
+                        </span>
+                        <span className='text-center'>
+                            <h1 className='text-2xl'>
+                                {inView ? <CountUp start={0} end={37} duration={8}/> : null}
+                            </h1>
+                            <h1>oafdoas</h1>
+                        </span>
+                        <span className='text-center'>
+                            <h1 className='text-2xl'>
+                                {inView ? <CountUp start={0} end={27} duration={8}/> : null}K
+                            </h1>
+                            <h1>Taik Lu</h1>
+                        </span>
+                    </div>
+
                     <Button className={`text-sm btn`}>Contact Me</Button>
                     <Button className={`text-gradient text-sm`}>My PortFolio</Button>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

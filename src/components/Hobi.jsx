@@ -15,7 +15,8 @@ function Hobi() {
                     <h2 className='h2 text-grad'>WHAT I DO.</h2>
                     <p className='mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <Button className={`btn btn-link mb-8`}>See My Work</Button>
-                    <img src={HobiImg}
+                    <img
+                        src={HobiImg}
                         className='w-[60%]'
                     />
                 </div>

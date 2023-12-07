@@ -5,8 +5,9 @@ import Nav from "./components/Nav";
 import Slide from "./components/Slide";
 import Footer from "./components/Footer";
 import Baner from "./components/Baner";
-import Hobi from "./components/Hobi";
+// import Hobi from "./components/Hobi";
 import Galeri from "./components/Galeri";
+import dataSlide from "./data/dataSlide";
 
 function App() {
   return (
@@ -16,9 +17,9 @@ function App() {
         <Baner />
         <Home />
         <About />
-        <Hobi />
+        {/* <Hobi /> */}
         <Galeri />
-        <Slide />
+        <Slide data={dataSlide} />
         <Footer />
       </div>
     </div>

@@ -9,7 +9,7 @@ import { BsClipboard2Data, BsBriefcase, BsChatSquareText } from 'react-icons/bs'
 function Nav() {
     return (
         <nav className='fixed w-full bottom-2 lg:bottom-8 overflow-hidden z-50'>
-            <div className='w-[500px] h-[100px] mx-auto px-8 backdrop-blur-sm cursor-pointer rounded-full text-2xl text-white/50 bg-black/20 flex justify-between items-center'>
+            <div className='w-[500px] h-[100px] mx-auto px-8 backdrop-blur-sm cursor-pointer rounded-full text-2xl text-white/50 bg-black/30 flex justify-between items-center'>
                 
                 <Link
                     to='Home'
@@ -34,7 +34,7 @@ function Nav() {
                 </Link>
 
                 <Link
-                    to='Hobi'
+                    to='Galeri'
                     activeClass='active'
                     smooth={true}
                     spy={true}
@@ -45,7 +45,7 @@ function Nav() {
                 </Link>
 
                 <Link
-                    to='Galeri'
+                    to='Slide'
                     activeClass='active'
                     smooth={true}
                     spy={true}
@@ -53,16 +53,6 @@ function Nav() {
                     className='w-[60px] h-[60px] flex justify-center items-center'    
                 >
                     <BsBriefcase />
-                </Link>
-
-                <Link
-                    activeClass='active'
-                    smooth={true}
-                    spy={true}
-                    offset={-200}
-                    className='w-[60px] h-[60px] flex justify-center items-center'        
-                >
-                    <BsChatSquareText />
                 </Link>
             </div>
         </nav>
