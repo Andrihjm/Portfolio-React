@@ -4,6 +4,7 @@ import { Link } from 'react-scroll'
 // Icons
 import { BiHomeAlt, BiUser } from 'react-icons/bi';
 import { BsClipboard2Data, BsBriefcase, BsChatSquareText } from 'react-icons/bs';
+import { LiaClipboardListSolid } from "react-icons/lia"
 
 
 function Nav() {
@@ -34,6 +35,17 @@ function Nav() {
                 </Link>
 
                 <Link
+                    to='Hobi'
+                    activeClass='active'
+                    smooth={true}
+                    spy={true}
+                    offset={-200}
+                    className='w-[60px] h-[60px] flex justify-center items-center'    
+                >
+                    <LiaClipboardListSolid />
+                </Link>
+
+                <Link
                     to='Galeri'
                     activeClass='active'
                     smooth={true}
@@ -43,7 +55,7 @@ function Nav() {
                 >
                     <BsClipboard2Data />
                 </Link>
-
+                
                 <Link
                     to='Slide'
                     activeClass='active'
