@@ -6,8 +6,9 @@ import Modal1 from './modalRouterLanjut/Modal1'
 
 
 
-function ButtonModal() {
+function ButtonModal({ children }) {
 
+        // Open Modal
     const [ modal, setModal ] = useState(false)
 
     const openModal = () => {
@@ -20,7 +21,7 @@ function ButtonModal() {
             onClick={openModal}
             className="text-sm btn py-2 px-9"
         >
-            Click To Continue
+            {children}
         </button>
 
         {modal && 

@@ -1,16 +1,17 @@
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 // Image
 import Logo from "../assets/Logo.png";
 import ButtonModal from "../context/ButtonModal";
+import Button from "./Button";
+// Icons
+import { IoArrowUndo } from "react-icons/io5";
 
 
-function Baner({ children }) {
+function Baner({ type }) {
 
-
-    // Munculin Pop-Up Modal
-  const [ modal, setModal ] = useState(false);
 
   return (
     <>
@@ -20,10 +21,17 @@ function Baner({ children }) {
               src={Logo}
               className="w-56"
           />
-          {modal && 
-            <NestedModal closeModal={() => setModal(false)} />
+          { type === 'awal'
+            ? <ButtonModal className={`btn`}>
+                Click To Continue!
+              </ButtonModal>
+
+            : <Link to={'/'}>
+                <Button className={`btn flex items-center gap-2`}>
+                  <IoArrowUndo /> Back
+                </Button>
+              </Link>
           }
-            { children }
         </div>
       </div>
     </>

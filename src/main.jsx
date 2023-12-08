@@ -15,7 +15,6 @@ import Baner from "./components/Baner";
 import Hobi from "./components/Hobi";
 import Galeri from "./components/Galeri";
 import dataSlide from "./data/dataSlide";
-import ButtonModal from './context/ButtonModal.jsx'
 import MyProfile from './components/children/MyProfile';
 import Toko from './components/children/Toko.jsx'
 
@@ -30,9 +29,7 @@ const router = createBrowserRouter([
         path: '/',
         element : (
           <>
-            <Baner>
-              <ButtonModal />
-            </Baner>
+            <Baner type='awal' />
             <Home />
             <About />
             <Hobi />
@@ -46,7 +43,7 @@ const router = createBrowserRouter([
         path: '/lanjut',
         element: (
           <>
-            <Baner />
+            <Baner type='asdf' />
             <Toko />
             <MyProfile />
           </>

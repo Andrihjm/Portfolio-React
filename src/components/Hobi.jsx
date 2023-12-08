@@ -4,12 +4,14 @@ import HobiImg from '../assets/Andri.jpeg'
 // Component
 import Button from './Button';
 import dataHobi from '../data/dataHobi';
+import Baner from './Baner';
 
 
 
 function Hobi() {
     return (
-        <section id="Hobi" className="h-screen container mx-auto">
+        <Baner type='login'>
+            <section id="Hobi" className="h-screen container mx-auto">
             <div className='flex justify-between items-center'>
                 <div className='w-1/2'>
                     <h2 className='h2 text-grad'>WHAT I DO.</h2>
@@ -43,6 +45,7 @@ function Hobi() {
                 </div>
             </div>
         </section>
+        </Baner>
     );
 }
 
