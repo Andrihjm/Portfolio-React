@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
+// React i
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 // Component
 import About from "./components/About";
@@ -14,7 +16,8 @@ import Baner from "./components/Baner";
 import Hobi from "./components/Hobi";
 import Galeri from "./components/Galeri";
 import dataSlide from "./data/dataSlide";
-import CodeQR from './components/children/CodeQR.jsx'
+import CodeQR from './components/children/CodeQR.jsx';
+import ButtonModal from './context/ButtonModal.jsx'
 
 
 const router = createBrowserRouter([
@@ -27,6 +30,9 @@ const router = createBrowserRouter([
         path: '/',
         element : (
           <>
+            <Baner>
+              <ButtonModal />
+            </Baner>
             <Home />
             <About />
             <Hobi />
@@ -38,7 +44,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/lanjut',
-        element:  <CodeQR />,
+        element: (
+          <>
+            <Baner />
+            <CodeQR />
+          </>
+        )
       }
     ]
   }

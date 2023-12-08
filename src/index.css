@@ -4,13 +4,12 @@
 
 
 
-  /* membuat container atau wadah dari scrollbar dengan lebar 20px  */
+  /* Membuat Container Atau Wadah Dari Scrollcar */
     ::-webkit-scrollbar {
       width: 20px;
     }
 
-    /* membuat background dari scrollbar */
-    /* kasih warna transparan agar lebih estetik  */
+    /* Kasih Warna SecrollBar */
     ::-webkit-scrollbar-track {
       background-color: transparent;
     }

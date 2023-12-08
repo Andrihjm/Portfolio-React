@@ -11,6 +11,9 @@ export default {
       backgroundImage: {
         bgimg: "url('./assets/bgImg.jpg')",
       },
+       animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      }
     },
   },
   plugins: [],
