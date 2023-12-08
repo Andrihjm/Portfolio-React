@@ -3,6 +3,7 @@ import { useState } from "react";
 
 // Image
 import Logo from "../assets/Logo.png";
+import ButtonModal from "../context/ButtonModal";
 
 
 function Baner({ children }) {
@@ -10,11 +11,6 @@ function Baner({ children }) {
 
     // Munculin Pop-Up Modal
   const [ modal, setModal ] = useState(false);
-
-  const openModal = () => {
-    setModal(true)
-  }
-
 
   return (
     <>

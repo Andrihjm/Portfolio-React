@@ -5,7 +5,6 @@ import './index.css'
 
 // React i
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { Link } from 'react-router-dom';
 
 // Component
 import About from "./components/About";
@@ -16,8 +15,9 @@ import Baner from "./components/Baner";
 import Hobi from "./components/Hobi";
 import Galeri from "./components/Galeri";
 import dataSlide from "./data/dataSlide";
-import CodeQR from './components/children/CodeQR.jsx';
 import ButtonModal from './context/ButtonModal.jsx'
+import MyProfile from './components/children/MyProfile';
+import Toko from './components/children/Toko.jsx'
 
 
 const router = createBrowserRouter([
@@ -47,7 +47,8 @@ const router = createBrowserRouter([
         element: (
           <>
             <Baner />
-            <CodeQR />
+            <Toko />
+            <MyProfile />
           </>
         )
       }
