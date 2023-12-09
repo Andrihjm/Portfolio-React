@@ -1,12 +1,15 @@
-import Button from "../../components/Button";
 import { Link } from "react-router-dom";
+
+// Component
+import Button from "../../components/Button";
+import Clipboard from "./Clipboard";
 
 function Modal1({ closeModal }) {
   return (
     <div className="absolute left-0 top-32 py-8 px-8 bg-black/90 rounded-lg">
       <span
         onClick={closeModal}
-        className="absolute top-0 right-4 text-4xl cursor-pointer"
+        className="absolute top-0 right-4 text-6xl cursor-pointer flex justify-center items-center"
       >
         &times;
       </span>
@@ -39,15 +42,20 @@ function Modal1({ closeModal }) {
         voluptates, reprehenderit tempora praesentium <span className="text-gradient text-base capitalize tracking-widest">tempore! Ea quisquam
         accusantium molestiae repellendus id voluptate eligendi?</span>
       </p>
-      <Link
-        to={"/lanjut"}
-        onClick={closeModal}
-      >
-        <Button className={`text-sm btn py-2 px-9`}>
-          Yakin Mau Lanjut?
-        </Button>
-      </Link>
-      
+      <div className="flex gap-8">
+        <Link
+          to={"/lanjut"}
+          onClick={closeModal}
+        >
+          <Button className={`text-sm btn py-2 px-9`}>
+            Yakin Mau Lanjut?
+          </Button>
+        </Link>
+
+        <Clipboard />
+      </div>
+
+     
     </div>
   );
 }

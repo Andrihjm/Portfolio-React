@@ -10,13 +10,14 @@ import Baner from './Baner';
 
 function Hobi() {
     return (
-        <Baner type='login'>
             <section id="Hobi" className="h-screen container mx-auto">
             <div className='flex justify-between items-center'>
                 <div className='w-1/2'>
                     <h2 className='h2 text-grad'>WHAT I DO.</h2>
                     <p className='mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <Button className={`btn btn-link mb-8`}>See My</Button>
+                    <Button className={`btn btn-link mb-8`}>
+                        See my activities
+                    </Button>
                     <img
                         src={HobiImg}
                         className='w-[60%]'
@@ -45,7 +46,6 @@ function Hobi() {
                 </div>
             </div>
         </section>
-        </Baner>
     );
 }
 

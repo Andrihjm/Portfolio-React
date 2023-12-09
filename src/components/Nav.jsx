@@ -3,7 +3,8 @@ import { Link } from 'react-scroll'
 
 // Icons
 import { BiHomeAlt, BiUser } from 'react-icons/bi';
-import { BsClipboard2Data, BsBriefcase, BsChatSquareText } from 'react-icons/bs';
+import { CiHardDrive } from "react-icons/ci";
+import { IoMdPhotos } from "react-icons/io";
 import { LiaClipboardListSolid } from "react-icons/lia"
 
 
@@ -53,7 +54,7 @@ function Nav() {
                     offset={-200}
                     className='w-[60px] h-[60px] flex justify-center items-center'    
                 >
-                    <BsClipboard2Data />
+                    <IoMdPhotos />
                 </Link>
                 
                 <Link
@@ -64,7 +65,7 @@ function Nav() {
                     offset={-200}
                     className='w-[60px] h-[60px] flex justify-center items-center'    
                 >
-                    <BsBriefcase />
+                    <CiHardDrive />
                 </Link>
             </div>
         </nav>

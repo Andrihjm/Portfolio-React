@@ -7,7 +7,9 @@ import { motion } from 'framer-motion'
 
 
 // Image
-import AboutImg from '../assets/Andri.jpeg'
+import AboutImg from '../assets/about.jpg'
+// Icons
+import { IoMdMoon } from "react-icons/io";
 // Component
 import Button from './Button';
 import { fadeIn } from '../variants'
@@ -29,7 +31,7 @@ function About() {
                         whileInView={'show'}
                         viewport={{ once:false, amount: 0.7 }}
                         src={AboutImg}              //  Image
-                        className='w-4/5 h-4/5'
+                        className='w-4/5'
                     />
                 </div>
 
@@ -48,24 +50,19 @@ function About() {
                         Lorem ipsum dolor sit amet  <span className='text-gradient'> adipisicing elit. Dolores harum fuga facilis </span> optio libero doloribus rerum magni quae molestias voluptatesdolor commodi explicabo repellat rem reiciendis,<span className='text-gradient'> deleniti cum soluta minima.</span>
                     </p>
 
-                    <div className='flex gap-8'>
+                    <div className='flex gap-16 mb-6'>
                         <span className='text-center'>
-                            <h1 className='text-2xl'>
+                            <h1 className='text-5xl'>
                                 {inView ? <CountUp start={0} end={19} duration={8}/> : null}
                             </h1>
-                            <h1>Years Old</h1>
+                            <h1 className='text-[1.3rem] text-gradient'>Years Old</h1>
                         </span>
+
                         <span className='text-center'>
-                            <h1 className='text-2xl'>
-                                {inView ? <CountUp start={0} end={37} duration={8}/> : null}
+                            <h1 className='text-5xl flex justify-center'>
+                                {inView ? <CountUp start={0} end={4} duration={8}/> : null}<IoMdMoon size={30} />
                             </h1>
-                            <h1>oafdoas</h1>
-                        </span>
-                        <span className='text-center'>
-                            <h1 className='text-2xl'>
-                                {inView ? <CountUp start={0} end={27} duration={8}/> : null}K
-                            </h1>
-                            <h1>Taik Lu</h1>
+                            <h1 className='text-[1.3rem] text-gradient'>Learn IT</h1>
                         </span>
                     </div>
 

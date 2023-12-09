@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import Button from './Button';
 import { fadeIn } from '../variants';
 // Image
-import Andri from '../assets/Andri.jpeg';
+import imgHome from '../assets/imgHome.jpg'
 // Icons
 import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa';
 
@@ -16,7 +16,7 @@ import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa';
 function Home() {
     return (
         <section id="Home" className="h-screen container mx-auto flex justify-center items-center">
-            <div className="flex justify-center items-center gap-16">
+            <div className="flex justify-between items-center gap-16">
                 <div
                     className="w-[70%]"
                 >
@@ -25,7 +25,7 @@ function Home() {
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{ once:false, amount: 0.7 }}
-                        className="text-5xl font-bold lg:text-7xl w-[70%]"
+                        className="text-5xl font-bold lg:text-7xl"
                     >
                         Haris Andri Irawan
                     </motion.h1>
@@ -38,13 +38,9 @@ function Home() {
                     >
                         <span className='mr-6 text-5xl'>I'am a</span>
                         <TypeAnimation sequence={[
-                            'Apa Luu',
+                            'Web Developer (amin)',
                             2000,
-                            'Slebewwww',
-                            2000,
-                            'Sempak Hilang',
-                            2000,
-                            'Cuakss Pake S',
+                            'Frontend Developer (amin lagi)',
                             2000,
                         ]}
                             speed={8}
@@ -58,7 +54,7 @@ function Home() {
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{ once:false, amount: 0.7 }}
-                    className='mb-2'
+                    className='mb-2 max-w-[90%]'
                 >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam exercitationem quas facilis corrupti error velit itaque, eaque voluptatibus perferendis alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, asperiores.
                 </motion.p>
@@ -91,9 +87,10 @@ function Home() {
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{ once:false, amount: 0.7 }}
-                    className="hidden lg:flex"
+                    className="hidden lg:flex w-[600px] h-[600px]"
                 >
-                    <img src={Andri}
+                    <img src={imgHome}
+                        className="bg-cover"
                     />
                 </motion.div>
             </div>

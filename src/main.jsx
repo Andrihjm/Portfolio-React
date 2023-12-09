@@ -13,11 +13,10 @@ import Slide from "./components/Slide";
 import Footer from "./components/Footer";
 import Baner from "./components/Baner";
 import Hobi from "./components/Hobi";
-import Galeri from "./components/Galeri";
+import Galeri from "./components/galeri/Galeri.jsx";
 import dataSlide from "./data/dataSlide";
 import MyProfile from './components/children/MyProfile';
-import Toko from './components/children/Toko.jsx'
-
+import Home2 from './components/children/Home2.jsx'
 
 const router = createBrowserRouter([
   {
@@ -44,7 +43,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <Baner type='asdf' />
-            <Toko />
+            <Home2 />
             <MyProfile />
           </>
         )
