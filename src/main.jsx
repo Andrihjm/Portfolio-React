@@ -14,9 +14,9 @@ import Footer from "./components/Footer";
 import Baner from "./components/Baner";
 import Hobi from "./components/Hobi";
 import Galeri from "./components/galeri/Galeri.jsx";
-import dataSlide from "./data/dataSlide";
-import MyProfile from './components/children/MyProfile';
 import Home2 from './components/children/Home2.jsx'
+// Data Array
+import dataSlide from "./data/dataSlide";
 
 const router = createBrowserRouter([
   {
@@ -44,7 +44,6 @@ const router = createBrowserRouter([
           <>
             <Baner type='asdf' />
             <Home2 />
-            <MyProfile />
           </>
         )
       }

@@ -25,7 +25,7 @@ function Home() {
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{ once:false, amount: 0.7 }}
-                        className="text-5xl font-bold lg:text-7xl"
+                        className="text-5xl font-bold lg:max-w-[70%] lg:text-7xl"
                     >
                         Haris Andri Irawan
                     </motion.h1>
@@ -76,7 +76,7 @@ function Home() {
                         viewport={{ once:false, amount: 0.7 }}
                         className='flex gap-4 pt-4 text-3xl'
                     >
-                        <a href=''> <FaGithub /> </a>
+                        <a href='https://github.com/Andrihjm' target='_blank'> <FaGithub /> </a>
                         <a href=''> <FaYoutube /> </a>
                         <a href=''> <FaDribbble /> </a>
                     </motion.div>
@@ -87,10 +87,10 @@ function Home() {
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{ once:false, amount: 0.7 }}
-                    className="hidden lg:flex w-[600px] h-[600px]"
+                    className="hidden lg:flex"
                 >
                     <img src={imgHome}
-                        className="bg-cover"
+                        className="bg-cover  w-[600px]"
                     />
                 </motion.div>
             </div>

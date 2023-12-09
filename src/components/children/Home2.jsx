@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-// Icons
-import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
+// Component
+import MyProfile from "./MyProfile";
 
 function Slider() {
   const slider = [
@@ -44,7 +44,9 @@ function Slider() {
             id="Home"
             style={{ backgroundImage: `url(${slider[jumlahArry].url})` }}
             className="h-screen w-screen rounded-lg bg-center bg-cover duration-1000"
-        ></section>
+        >
+          <MyProfile />
+        </section>
   );
 }
 

@@ -14,7 +14,7 @@ function Hobi() {
             <div className='flex justify-between items-center'>
                 <div className='w-1/2'>
                     <h2 className='h2 text-grad'>WHAT I DO.</h2>
-                    <p className='mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p className='mb-2 h3 max-w-[600px]'>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet. adipisicing elit.</p>
                     <Button className={`btn btn-link mb-8`}>
                         See my activities
                     </Button>
@@ -30,7 +30,7 @@ function Hobi() {
                                 key={data.id}
                                 className='border-b-2 mb-8 border-white/20 relative'
                             >
-                                <h4 className='text-grad text-xl tracking-wider font-primary font-semibold mb-4'>
+                                <h4 className='h3 tracking-wider font-primary font-semibold mb-4'>
                                     {data.title}
                                 </h4>
                                 <p className='mb-3'>
